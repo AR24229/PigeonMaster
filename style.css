@@ -79,4 +79,12 @@ body {
     color: #333;
     margin-top: 10px;
   }
+
+.subtitle {
+  color: #8860d0;
+  font-size: 24px;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
   
