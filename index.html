@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Gołębia Niespodzianka 🕊️</title>
+  <link rel="stylesheet" href="style.css" />
+  <script
+  src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs"
+  type="module"
+></script>
+</head>
+<body>
+
+  <div class="screen" id="screen-code">
+    <h1>🔍 Znajdź kod na lustrach!</h1>
+    <div id="code-display" class="code-display"></div>
+    <div class="keypad">
+      <button class="num">1</button>
+      <button class="num">2</button>
+      <button class="num">3</button>
+      <button class="num">4</button>
+      <button class="num">5</button>
+      <button class="num">6</button>
+      <button class="num">7</button>
+      <button class="num">8</button>
+      <button class="num">9</button>
+      <button class="clear">🗑️</button>
+      <button class="num">0</button>
+      <button class="submit">✔️</button>
+    </div>
+  </div>
+
+  <div class="screen hidden" id="screen-loading">
+    <dotlottie-player
+    src="https://lottie.host/66db30d3-a09f-429b-b17c-d357b26673c1/MtcNxhePWU.json"
+    background="transparent"
+    speed="1"
+    style="width: 300px; height: 300px"
+    loop
+    autoplay
+  ></dotlottie-player>
+  
+    <p>Sprawdzam kod... 🕊️</p>
+  </div>
+
+  <div class="screen hidden" id="screen-result">
+    <h2>🎉 Gratulacje!</h2>
+    <p>Wygrałaś 50 naklejek z gołębiami 🕊️💖</p>
+    <p class="next-step">Teraz leć dalej na:</p>
+    <p class="address">Dąbska 18N/LU12<br>31-572 Kraków</p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
